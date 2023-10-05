@@ -1,0 +1,48 @@
+.rectangle {
+	background-color: blueviolet;
+	width: 900px;
+	height: 400px;
+	animation: rotate 5s ease-in infinite;
+}
+
+@keyframes rotate {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+}
+
+.circle {
+	background-color: plum;
+	width: 400px;
+	height: 400px;
+	border-radius: 100%;
+	position: relative;
+	animation: move 5s ease-in infinite;
+}
+
+@keyframes move {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: 200px;
+		top: 0px;
+	}
+	50% {
+		left: 200px;
+		top: 200px;
+	}
+	75% {
+		left: 0px;
+		top: 200px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
